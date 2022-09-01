@@ -1,0 +1,130 @@
+:root
+{
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "open sans" , sans-serif;
+}
+.game{
+    background-color: #eee;
+    min-height: 100vh;
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+}
+/* .options
+{
+  width: 30%;
+  height: 40px;
+  border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #111213;
+margin-bottom: 15px;
+} */
+.options > select
+{
+    text-align: center;
+    width: 30%;
+    border-radius: 6px;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    
+  
+}
+.name{
+    background-color:var(--color-primary-variant);
+    color: bisque;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.message{
+background-color: var(--color-white);
+padding: 15px;
+margin: 15px 0;
+border-radius: 7px;
+text-align: center;
+}
+.message span{
+font-weight: bold;
+color: var(--color-primary);
+}
+.start{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+.start:hover{
+    background-color: #111213 ;
+}
+.the-word{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color:var(--color-primary-variant);
+    user-select: none;
+}
+input{
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 3px solid var(--color-info-dark);
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 7px;
+    caret-color: black;
+}
+input:focus{
+    outline: none;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(223, 223, 208);
+    padding: 15px;
+}
+.control span{
+ font-weight: bold;
+ color: darkolivegreen;
+}
+
+.finish{
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding: 15px;
+}
+.finish .good{
+color: var(--color-danger);
+}
+.finish .bad{
+    color: darkred;
+}
